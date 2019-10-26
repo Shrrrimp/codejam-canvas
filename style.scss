@@ -1,0 +1,127 @@
+$white: #ffffff;
+$gray: rgba(0, 0, 0, 0.5413);
+$black: rgba(60, 57, 57, 1);
+
+// body {
+//     background: hotpink;
+// }
+
+a {
+    text-decoration: none;
+}
+
+/*---------------
+    Header
+---------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 10px;
+    background-color: $white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+
+    .title_container {
+        display: flex;
+        align-items: center;
+    }
+
+    .title {
+        margin-left: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+
+/*---------------
+    Main
+---------------*/
+
+main {
+    display: flex;
+}
+
+/*------------Toolbars-------------*/
+
+.toolbar {
+    margin: 50px 20px;
+    width: 230px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+
+    & ul:first-child {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+
+    ul a{
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: $gray;  
+    }
+
+    ul a:hover li {
+        background-color: rgba(60, 57, 57, 0.23);
+    }
+
+
+    /*--------------tools----------------*/
+    .set--tools li::before {
+        display: inline-block;
+        margin: 10px;
+        vertical-align: -20%;
+    }
+
+    .filltool::before {
+        content: url(assets/images/filltool_icon.png);
+    }
+
+    .pipette::before {
+        content: url(assets/images/pipette_icon.png);
+    }
+
+    .move::before {
+        content: url(assets/images/move_icon.png);
+    }
+
+    .transform::before {
+        content: url(assets/images/transform_icon.png);
+    }
+
+    /*--------------colors----------------*/
+    .set--colors li::before {
+        content: "";
+        display: inline-flex;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        border: 1px solid black;
+    }
+
+    .current_color::before {
+        background-color: #C4C4C4;
+    }
+
+    .prev_color::before {
+        background-color: #41F795;
+    }
+
+    .main_color::before {
+        background-color: #F74141;
+    }
+
+    .sub_color::before {
+        background-color: #41B6F7;
+    }
+}
+
+/*------------Canvas-------------*/
+
+.canvas_container {
+    margin: 50px auto;
+}
+
+#canvas {
+    background-color: lavenderblush;
+}

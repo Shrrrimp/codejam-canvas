@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CodeJam - Pallete</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="title_container">
+            <a href="#"><img src="assets/images/nav_icon.png" alt="navigation icon"></a>
+            <h1 class="title">CodeJam - Pallete</h1>
+        </div>
+        <a href="#"><img src="assets/images/menu_icon.png" alt="menu icon"></a>
+    </header>
+    <main>
+        <section class="toolbars">
+            <div class="toolbar">
+                <ul class="set--tools">
+                    <a href="#"><li class="filltool">Paint bucket</li></a>
+                    <a href="#"><li class="pipette">Choose color</li></a>
+                </ul>
+                <ul class="set--tools">
+                    <a href="#"><li class="move">Move</li></a>
+                    <a href="#"><li class="transform">Transform</li></a>
+                </ul>
+            </div>
+            <div class="toolbar">
+                <ul class="set--colors">
+                    <a href="#"><li class="current_color">Current color</li></a>
+                    <a href="#"><li class="prev_color">Prev color</li></a>
+                </ul>
+                <ul class="set--colors">
+                    <a href="#"><li class="main_color">red</li></a>
+                    <a href="#"><li class="sub_color">blue</li></a>
+                </ul>
+            </div>
+        </section>
+        <section class="canvas_container">
+            <canvas id="canvas" width="512" height="512"></canvas>
+        </section>
+        <div class="toolbar">
+            <ul class="set--rec">
+                <a href="#" id="size4"><li class="rec">4x4</li></a>
+                <a href="#" id="size32"><li class="rec">32x32</li></a>
+                <a href="#" id="sizeImg"><li class="rec">Image</li></a>
+            </ul>
+        </div>
+    </main>
+    <script  src="./dist/app.js"></script>
+</body>
+</html>

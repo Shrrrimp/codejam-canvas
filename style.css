@@ -1,0 +1,142 @@
+a {
+  text-decoration: none;
+}
+
+/*---------------
+    Header
+---------------*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 0 10px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+
+.header .title_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .title {
+  margin-left: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*---------------
+    Main
+---------------*/
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*------------Toolbars-------------*/
+.toolbar {
+  margin: 50px 20px;
+  width: 230px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  /*--------------tools----------------*/
+  /*--------------colors----------------*/
+}
+
+.toolbar ul:first-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.toolbar ul a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.5413);
+}
+
+.toolbar ul a:hover li {
+  background-color: rgba(60, 57, 57, 0.23);
+}
+
+.toolbar .set--tools li::before {
+  display: inline-block;
+  margin: 10px;
+  vertical-align: -20%;
+}
+
+.toolbar .filltool::before {
+  content: url(assets/images/filltool_icon.png);
+}
+
+.toolbar .pipette::before {
+  content: url(assets/images/pipette_icon.png);
+}
+
+.toolbar .move::before {
+  content: url(assets/images/move_icon.png);
+}
+
+.toolbar .transform::before {
+  content: url(assets/images/transform_icon.png);
+}
+
+.toolbar .set--colors li::before {
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.toolbar .current_color::before {
+  background-color: #C4C4C4;
+}
+
+.toolbar .prev_color::before {
+  background-color: #41F795;
+}
+
+.toolbar .main_color::before {
+  background-color: #F74141;
+}
+
+.toolbar .sub_color::before {
+  background-color: #41B6F7;
+}
+
+.toolbar .set--rec li::before {
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+/*------------Canvas-------------*/
+.canvas_container {
+  margin: 50px auto;
+}
+
+#canvas {
+  border: 1px solid rgba(0, 0, 0, 0.5413);
+}
+/*# sourceMappingURL=style.css.map */

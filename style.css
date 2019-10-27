@@ -120,12 +120,23 @@ main {
   background-color: #41B6F7;
 }
 
+.toolbar .set--rec li::before {
+  content: "";
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
 /*------------Canvas-------------*/
 .canvas_container {
   margin: 50px auto;
 }
 
 #canvas {
-  background-color: lavenderblush;
+  border: 1px solid rgba(0, 0, 0, 0.5413);
 }
 /*# sourceMappingURL=style.css.map */

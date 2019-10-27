@@ -2,10 +2,6 @@ $white: #ffffff;
 $gray: rgba(0, 0, 0, 0.5413);
 $black: rgba(60, 57, 57, 1);
 
-// body {
-//     background: hotpink;
-// }
-
 a {
     text-decoration: none;
 }
@@ -114,6 +110,15 @@ main {
     .sub_color::before {
         background-color: #41B6F7;
     }
+
+    .set--rec li::before {
+        content: "";
+        display: inline-flex;
+        margin: 10px;
+        width: 20px;
+        height: 20px;
+        border: 1px solid black;
+    }
 }
 
 /*------------Canvas-------------*/
@@ -123,5 +128,5 @@ main {
 }
 
 #canvas {
-    background-color: lavenderblush;
+    border: 1px solid $gray;
 }
